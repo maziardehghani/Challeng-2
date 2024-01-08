@@ -14,21 +14,13 @@
  *
  */
 
-$word = 'FILIPEK';
+$pronunciations = ['T', 'D', 'L', 'F'];
+$word = 'FILIKHGHDFIGQFFLLTTKKKKTPEK';
 $counter =0;
 
 for ($i=0;$i<strlen($word);$i++)
 {
-    if ($word[$i] === 'F')
-        $counter++;
-
-    if ($word[$i] === 'L')
-        $counter++;
-
-    if ($word[$i] === 'D')
-        $counter++;
-
-    if ($word[$i] === 'T')
+    if (in_array($word[$i], $pronunciations))
         $counter++;
 }
 
